@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #07110B;
+  --bg-secondary: #0B1F12;
+  --bg-card: #101D14;
+  --bg-elevated: #14261A;
+  --accent-emerald: #16A34A;
+  --accent-lime: #A3E635;
+  --forest-green: #365C38;
+  --border-forest: #243C2A;
+  --text-main: #E8F0E9;
+  --text-secondary: #9BAD9F;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+    background-color: #07110B;
+    color: #E8F0E9;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Manrope', sans-serif;
+    font-style: normal;
+    background-color: #07110B;
+    color: #E8F0E9;
+    overflow-x: hidden;
+  }
+}
+
+.font-pixel {
+  font-family: 'Silkscreen', 'Geist Mono', monospace;
+  letter-spacing: 0.01em;
+}
+
+.font-mono-data {
+  font-family: 'Geist Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.pixel-block-btn {
+  box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.22), inset 0 -2px 0 rgba(4, 16, 8, 0.35);
+}
+
+.pixel-card-bevel {
+  box-shadow: inset 0 1px 0 rgba(163, 230, 53, 0.08);
+}
+
+/* Named Typography Styles */
+.heading-1 {
+  @apply text-6xl font-semibold tracking-tight;
+  text-wrap: balance;
+}
+
+.heading-2 {
+  @apply text-5xl font-semibold tracking-tight;
+  text-wrap: balance;
+}
+
+.heading-3 {
+  @apply text-4xl font-semibold tracking-tight;
+  text-wrap: balance;
+}
+
+.heading-4 {
+  @apply text-3xl font-semibold tracking-tight;
+  text-wrap: balance;
+}
+
+.heading-5 {
+  @apply text-2xl font-semibold tracking-tight;
+  text-wrap: balance;
+}
+
+.heading-6 {
+  @apply text-xl font-semibold tracking-tight;
+  text-wrap: balance;
+}
+
+.title-1 {
+  @apply text-xl font-medium;
+  text-wrap: balance;
+}
+
+.title-2 {
+  @apply text-lg font-medium;
+  text-wrap: balance;
+}
+
+.title-3 {
+  @apply text-base font-medium;
+  text-wrap: balance;
+}
+
+.title-4 {
+  @apply text-sm font-medium;
+  text-wrap: balance;
+}
+
+.title-5 {
+  @apply text-xs font-medium;
+  text-wrap: balance;
+}
+
+.body-1 {
+  @apply text-base font-semibold;
+  text-wrap: pretty;
+}
+
+.body-2 {
+  @apply text-base font-medium;
+  text-wrap: pretty;
+}
+
+.body-3 {
+  @apply text-base font-normal;
+  text-wrap: pretty;
+}
+
+.body-4 {
+  @apply text-sm font-semibold;
+  text-wrap: pretty;
+}
+
+.body-5 {
+  @apply text-sm font-medium;
+  text-wrap: pretty;
+}
+
+.body-6 {
+  @apply text-sm font-normal;
+  text-wrap: pretty;
+}
+
+.button-lg {
+  @apply text-lg font-semibold;
+}
+
+.button-md {
+  @apply text-base font-semibold;
+}
+
+.button-sm {
+  @apply text-sm font-semibold;
+}
+
+.button-xsm {
+  @apply text-xs font-semibold;
+}
+
+.caption-1 {
+  @apply text-sm font-medium;
+}
+
+.caption-2 {
+  @apply text-sm font-normal;
+}
+
+.caption-3 {
+  @apply text-xs font-semibold;
+}
+
+.caption-4 {
+  @apply text-xs font-medium;
+}
+
+.caption-5 {
+  @apply text-xs font-normal;
+}
+
+/* Hero Heading Text Gradient (only on text, never background) */
+.hero-heading-gradient {
+  background: linear-gradient(90deg, #E8F0E9 0%, #A3E635 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Motion Curve Utilities */
+.ease-weighted {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-section {
+  opacity: 0;
+  transform: translateY(32px);
+  transition-property: opacity, transform;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-section {
+    transform: none;
+    transition-property: opacity;
+    transition-duration: 300ms;
+  }
+
+  .reveal-section.is-visible {
+    transform: none;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "IRON CLOUD MC",
+  "description": "Official IRON CLOUD MC Minecraft server homepage and store for ranks, coins, crate keys, and community support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

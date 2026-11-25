@@ -1,0 +1,10 @@
+{
+  "serverName": "IRON CLOUD MC",
+  "serverIp": "play.ironcloudmc.fun",
+  "bedrockPort": 19132,
+  "bedrockPlayersCanJoin": true,
+  "discordLink": "https://discord.gg/ErBVfVqEVg",
+  "logoPath": "/assets/aistudio/server_logo_1788529150584_b551acb7.jpg",
+  "defaultColour": "emerald",
+  "_defaultColourHelp": "Choose emerald, green, lime, blue, red, yellow, purple, white, pink, or orange."
+}

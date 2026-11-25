@@ -1,0 +1,45 @@
+{
+  "currency": {
+    "default": "BDT",
+    "base": "BDT",
+    "options": {
+      "BDT": { "label": "BDT", "symbol": "৳", "decimals": 0, "rate": 1 },
+      "USD": { "label": "USD", "symbol": "$", "decimals": 2, "rate": 0.0084 },
+      "INR": { "label": "INR", "symbol": "₹", "decimals": 0, "rate": 0.71 }
+    }
+  },
+  "scroll": {
+    "enabled": true,
+    "colourShift": false,
+    "reveal": true
+  },
+  "redirect": {
+    "defaultOrderLink": ""
+  },
+  "coupons": [
+    { "code": "IRON10", "type": "percent", "value": 10, "minBdt": 150, "label": "10% off orders ৳150+" },
+    { "code": "CLOUD50", "type": "flat", "value": 50, "minBdt": 300, "label": "৳50 off orders ৳300+" }
+  ],
+  "pages": {
+    "ranks": {
+      "navLabel": "Ranks",
+      "title": "Server Ranks",
+      "subtitle": "Permanent rank tiers from Hero to IMMORTAL with fly, extra homes, and exclusive cosmetics."
+    },
+    "coins": {
+      "navLabel": "Coins",
+      "title": "Coin Packages",
+      "subtitle": "Purchase in game currency packages with up to 30% bonus coins delivered after payment verification."
+    },
+    "keys": {
+      "navLabel": "Keys",
+      "title": "Crate Keys",
+      "subtitle": "Unlock Common, Rare, Epic, Legendary, and Mythical crates across survival and skyblock."
+    },
+    "special": {
+      "navLabel": "Special Packages",
+      "title": "Special Packages",
+      "subtitle": "Curated seasonal starter bundles combining ranks, coins, and crate keys."
+    }
+  }
+}

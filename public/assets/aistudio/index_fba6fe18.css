@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-minecraft {
+    font-family: 'Minecraft', 'Pixelify Sans', 'Press Start 2P', monospace, sans-serif;
+  }
+
+  .font-pixel {
+    font-family: 'Pixelify Sans', 'Minecraft', monospace, sans-serif;
+  }
+}
+
+/* Authentic Minecraft 3D voxel text shadow & gaming aesthetics */
+.minecraft-title {
+  font-family: 'Minecraft', 'Pixelify Sans', 'Press Start 2P', monospace, sans-serif;
+  letter-spacing: 0.05em;
+  text-shadow:
+    0 3px 0 #1e0836,
+    0 6px 0 #120323,
+    0 9px 0 #07010f,
+    0 12px 24px rgba(0, 0, 0, 0.85),
+    0 0 35px rgba(168, 85, 247, 0.4);
+}
+
+.minecraft-title-mc {
+  font-family: 'Minecraft', 'Pixelify Sans', 'Press Start 2P', monospace, sans-serif;
+  letter-spacing: 0.05em;
+  text-shadow:
+    0 3px 0 #581c87,
+    0 6px 0 #3b0764,
+    0 9px 0 #1e0538,
+    0 0 25px rgba(192, 132, 252, 0.85),
+    0 0 50px rgba(147, 51, 234, 0.6);
+}
+
+/* Minecraft enchanted item glint animation */
+@keyframes enchanted-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-enchanted-shimmer {
+  background-size: 200% auto;
+  animation: enchanted-shimmer 3.5s linear infinite;
+}
+
+/* Subtle voxel float animation */
+@keyframes voxel-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-voxel-float {
+  animation: voxel-float 4s ease-in-out infinite;
+}

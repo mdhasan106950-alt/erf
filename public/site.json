@@ -1,0 +1,26 @@
+{
+  "floatingNavbar": true,
+  "enableStoreButton": true,
+  "pages": {
+    "ranks": true,
+    "coins": true,
+    "keys": true,
+    "special": true
+  },
+  "gameModes": ["survival", "skyblock", "factions", "pvp-arena"],
+  "hero": {
+    "liveStats": true,
+    "discord": {
+      "enabled": true,
+      "inviteCode": "ErBVfVqEVg",
+      "refreshSeconds": 300
+    }
+  },
+  "liveChat": {
+    "enabled": false,
+    "title": "Live server chat",
+    "subtitle": "Messages from the server when the chat bridge is connected.",
+    "refreshSeconds": 12,
+    "maxMessages": 40
+  }
+}
